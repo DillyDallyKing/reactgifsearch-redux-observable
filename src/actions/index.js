@@ -16,6 +16,7 @@ export function requestGifs(term) {
   };
 }
 export function requestGifsSuccess(data = []) {
+  console.log(data);
   return {
     type: REQUEST_GIFS_SUCCESS,
     payload: data.response.data
